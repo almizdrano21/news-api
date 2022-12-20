@@ -1,5 +1,4 @@
-import { useState } from "react";
-import { Container, Grid, Typography } from "@mui/material";
+import { Container, Select, Typography } from "@mui/material";
 const App = () => {
   return (
     <Container>
@@ -8,6 +7,9 @@ const App = () => {
           Buscador de noticias
         </Typography>
       </header>
+      <Select>
+        <option></option>
+      </Select>
     </Container>
   );
 };
