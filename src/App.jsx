@@ -1,6 +1,7 @@
 import { Container, Grid, Select, Typography } from "@mui/material";
 import Formulario from "./components/Formulario";
 import { NewsProvider } from "./context/NewsProvider";
+import NewsList from "./components/NewsList";
 const App = () => {
   return (
     <NewsProvider>
@@ -20,6 +21,7 @@ const App = () => {
             <Formulario />
           </Grid>
         </Grid>
+        <NewsList />
       </Container>
     </NewsProvider>
   );

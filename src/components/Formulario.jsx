@@ -14,18 +14,17 @@ const Formulario = () => {
     <form>
       <FormControl fullWidth>
         <InputLabel>Category</InputLabel>
-        <Select label="Category" onChange={(e) => handleChangeCategory(e)}>
-          {CATEGORIES.map((category) => (
+        <Select
+          label="Category"
+          onChange={(e) => handleChangeCategory(e)}
+          defaultValue="general"
+        >
+          {CATEGORIES.map((category, i) => (
             <MenuItem key={category.value} value={category.value}>
               {category.label}
             </MenuItem>
           ))}
         </Select>
-        <Box sx={{ marginTop: 2 }}>
-          <Button fullWidth variant="contained" color="primary">
-            Search
-          </Button>
-        </Box>
       </FormControl>
     </form>
   );
