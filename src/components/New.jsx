@@ -9,7 +9,7 @@ import Typography from "@mui/material/Typography";
 const New = ({ info }) => {
   const { urlToImage, url, title, description, source } = info;
   return (
-    <Grid item md={6} lg={4} gap="small">
+    <Grid item md={6} lg={4} gap="sma">
       <Card>
         {urlToImage && (
           <CardMedia
